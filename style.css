@@ -1,0 +1,386 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu-bar {
+  align-items: center;
+  padding: 7px 5% 7px 40px;
+  background-color: #040404;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+.menu-bar ul {
+  border-radius: 25px;
+  background-color: #1b1c1e;
+  cursor: pointer;
+  gap: 10px;
+  height: 60px;
+  display: flex;
+}
+.menu-bar ul li {
+  padding: 20px;
+  list-style: none;
+}
+.menu-bar ul li:first-child > a {
+  color: rgb(165, 255, 9);
+}
+.menu-bar ul a {
+  margin: 5px;
+  padding: 7px 15px;
+  text-decoration: none;
+  color: rgb(219, 213, 213);
+  font-size: 20px;
+}
+/* banner */
+.banner {
+  width: 100%;
+}
+.banner-content {
+  display: flex;
+  gap: 2%;
+  width: 100%;
+  height: 400px;
+  padding: 3% 8% 2% 8%;
+  background-color: #585656;
+}
+.border-banner {
+  width: 100%;
+  height: 7px;
+  background-color: rgb(225, 245, 4);
+}
+
+.banner-content img {
+  width: 100%;
+  border: 15px solid rgb(248, 243, 136);
+}
+.banner-title {
+  color: white;
+  padding: 10px 20px;
+}
+.banner-title > * {
+  margin: 15px 0;
+}
+.banner-title button {
+  background-size: cover;
+  background-image: url(./img/templatemo_button_01.png);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+}
+.main-content {
+  display: flex;
+  gap: 50px;
+  padding: 3% 4%;
+}
+
+section {
+  width: 80%;
+}
+.top-section {
+  width: 100%;
+}
+.top-section img {
+  width: 100%;
+}
+.article-1 p,
+a {
+  color: #040404;
+  font-weight: 540;
+}
+
+section p {
+  line-height: 25px;
+  margin: 20px 0;
+}
+section ul li {
+  margin-left: 30px;
+  list-style-type: square;
+}
+section article p {
+  color: #6f6c6c;
+}
+section article li {
+  color: #6f6c6c;
+}
+.article-4 {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.col-title {
+  width: 65px;
+  height: 120px;
+  background-color: rgb(203, 245, 12);
+}
+
+aside {
+  width: 40%;
+}
+.title-aside {
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  padding: 15px 25px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./img/templatemo_banner_bg.jpg);
+}
+.card-info {
+  background-color: #ebebeb;
+  height: 150px;
+  gap: 10px;
+  display: flex;
+  overflow: hidden;
+}
+.aside-img {
+  padding: 20px 1px 10px 20px;
+  width: 30%;
+}
+.aside-img img {
+  object-fit: cover;
+  width: 100%;
+  border: 6px solid rgb(250, 250, 250);
+}
+.card-title {
+  width: 50%;
+  padding: 20px 1px 10px 1px;
+}
+.card-title p:nth-child(2) {
+  color: #0a0909;
+}
+.card-title p {
+  color: #565050;
+}
+aside .card-info:nth-child(2) {
+  border-bottom: 3px solid white;
+}
+
+aside .card-info:nth-child(3) {
+  background-color: #dcdcdc;
+}
+footer {
+  height: 290px;
+  background-color: black;
+}
+footer p {
+  color: rgb(114, 111, 111);
+  margin-left: 7%;
+  margin-top: 10px;
+}
+.info-footer {
+  display: flex;
+  padding: 15px 10%;
+  justify-content: space-between;
+}
+.info-footer ul li {
+  margin-left: 15px;
+  margin: 10px 0;
+  list-style: none;
+  color: rgb(114, 111, 111);
+}
+.info-footer ul li:first-child {
+  background-size: cover;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  padding: 10px 70px 10px 25px;
+  border-radius: 15px;
+  background-position: center;
+  background-image: url(./img/templatemo_footer_title_bg.png);
+}
+/* ---TABLET---- */
+@media (max-width: 1024px) {
+  .menu-bar {
+    align-items: center;
+    background-color: #0f0e0e;
+    height: 200px;
+    display: block;
+  }
+  .menu-bar img {
+    margin-left: 30%;
+    margin: 10px 30%;
+  }
+  .menu-bar ul {
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #1b1c1e;
+  }
+  .menu-bar ul li {
+    list-style: none;
+  }
+  .banner-content {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    height: 400px;
+    padding: 3% 8% 2% 8%;
+    background-color: #585656;
+  }
+  .banner-content img {
+    width: 50%;
+    border: 15px solid rgb(248, 243, 136);
+  }
+  .banner-content {
+    overflow: hidden;
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    height: 300px;
+    padding: 3% 8% 2% 8%;
+    background-color: #141414;
+  }
+  .banner-title {
+    font-size: 10px;
+    width: 50%;
+    color: white;
+    padding: 10px 20px;
+  }
+  .banner-title button {
+    background-size: cover;
+    background-image: url(./img/templatemo_button_01.png);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+  }
+  .info-footer ul li:first-child {
+    background-size: cover;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px 15px 10px 25px;
+    border-radius: 15px;
+    background-position: center;
+    background-image: url(./img/templatemo_footer_title_bg.png);
+  }
+  .card-title {
+    width: 70%;
+    padding: 15px;
+  }
+  .card-info {
+    background-color: #ebebeb;
+    height: 350px;
+    display: flex;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  section p {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 20px 0;
+  }
+  footer {
+    height: 340px;
+  }
+  footer li {
+    color: rgb(114, 111, 111);
+
+    font-size: 19px;
+  }
+  .info-footer ul li {
+    margin: 10px;
+    list-style: none;
+    color: rgb(114, 111, 111);
+  }
+}
+/* ----MOBILE------ */
+@media (max-width: 767px) {
+  .menu-bar {
+    display: flex;
+    background-color: #0c0c0c;
+    height: 100px;
+  }
+  .menu-bar img {
+    width: 50%;
+  }
+  .logo {
+    font-size: 60px;
+    color: white;
+    display: block;
+  }
+  .menu-bar ul {
+    display: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #1b1c1e;
+  }
+  .menu-bar ul li {
+    display: none;
+    list-style: none;
+  }
+  .banner-content {
+    display: block;
+
+    width: 100%;
+    height: 550px;
+    background-color: #585656;
+  }
+  .banner-content p {
+    color: rgb(199, 199, 199);
+  }
+  .banner {
+    width: 100%;
+  }
+  .banner-content img {
+    width: 100%;
+    border: 15px solid rgb(248, 243, 136);
+  }
+
+  .banner-title {
+    font-size: 10px;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+  }
+  .banner-title button {
+    background-size: cover;
+    background-image: url(./img/templatemo_button_01.png);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+  }
+
+  .main-content {
+    display: block;
+    padding: 10px 30px;
+  }
+  section {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  footer {
+    height: 800px;
+    background-color: black;
+  }
+  .info-footer {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 20px;
+    padding: 15px 10%;
+  }
+  .banner-content img {
+    width: 100%;
+    border: 5px solid rgb(248, 243, 136);
+  }
+  .banner-content p {
+    font-size: 20px;
+  }
+  .info-footer ul li:first-child {
+    background-size: cover;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    background-position: center;
+    background-image: url(./img/templatemo_footer_title_bg.png);
+  }
+}
